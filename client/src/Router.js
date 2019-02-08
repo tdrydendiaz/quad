@@ -21,8 +21,8 @@ function RoutingExample() {
         
 <p>HelloWorld</p>
 
- <Route exact path="/" />
-        <Route path="/parentChild" component={Unit} />
+        <Route exact path="/" />
+        <Route path="/Unit" component={Unit} />
 
       </div>
     </Router>

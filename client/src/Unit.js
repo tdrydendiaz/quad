@@ -7,7 +7,8 @@ class Unit extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        data: 'Initial data - set in the parent class'
+        data: 'Initial data - set in the parent class',
+		responseData: ''
       }
     }
   
@@ -16,7 +17,7 @@ class Unit extends Component {
 
             console.log(response.data);
             this.setState({
-                data: response.data
+                responseData: response.data
             });
 
         });
@@ -28,6 +29,7 @@ class Unit extends Component {
         <div>
             <button onClick={this.makeRequest} >Click me</button>
           <h2>{this.state.data}</h2>
+		  <h2>{...this.state.responseData}</h2>
         </div>
       );
     }

@@ -19,7 +19,7 @@ function RoutingExample() {
             <Link to="/Unit">How to override from the Child/Parent</Link>
           </button>
         
-<p>Docker sucks</p>
+<p>Docker rules</p>
 
         <Route exact path="/" />
         <Route path="/Unit" component={Unit} />
